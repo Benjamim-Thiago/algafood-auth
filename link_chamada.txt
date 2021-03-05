@@ -1,0 +1,13 @@
+http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&
+state=abc&redirect_uri=http://www.foodanalytics.local:8082
+
+
+
+CODE PLAIN
+
+code verifier=teste123
+code Changelle=teste123
+
+http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&
+state=abc&redirect_uri=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain
+
