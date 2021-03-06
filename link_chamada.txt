@@ -11,3 +11,12 @@ code Changelle=teste123
 http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&
 state=abc&redirect_uri=http://www.foodanalytics.local:8082&code_challenge=teste123&code_challenge_method=plain
 
+
+CODE SHA-256
+
+code verifier=~0QnBZDJdtDHA9q1E76r_3Zw1uCYdHi9R2HGqydRgb.UVhP0~TVG7T0Xetc1adthncJt6cS-7ynUA0TbYopl76Fe0wdI3FlDMcXNXEVogh0-B6mVQt9PdmFNZORHp5rn
+code Changelle=po6FyjKyU0YlFlCOCjezpF5gr4oMXnJ1--fu7AT-J6A
+
+http://auth.algafood.local:8081/oauth/authorize?response_type=code&client_id=foodanalytics&
+state=abc&redirect_uri=http://www.foodanalytics.local:8082&code_challenge=po6FyjKyU0YlFlCOCjezpF5gr4oMXnJ1--fu7AT-J6A&code_challenge_method=s256
+
