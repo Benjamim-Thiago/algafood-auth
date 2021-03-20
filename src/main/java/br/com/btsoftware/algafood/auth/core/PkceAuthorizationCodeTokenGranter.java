@@ -1,5 +1,5 @@
 // Solução baseada em: https://github.com/spring-projects/spring-security-oauth/pull/675/files
-package br.com.btsoftware.algafood.auth;
+package br.com.btsoftware.algafood.auth.core;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

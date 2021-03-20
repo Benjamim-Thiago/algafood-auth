@@ -1,4 +1,4 @@
-package br.com.btsoftware.algafood.auth;
+package br.com.btsoftware.algafood.auth.core;
 import java.util.Collections;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;

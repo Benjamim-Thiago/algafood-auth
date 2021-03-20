@@ -1,4 +1,4 @@
-package br.com.btsoftware.algafood.auth;
+package br.com.btsoftware.algafood.auth.core;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
