@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "users")
-public class User {
+public class UserCredentials {
 
 	@EqualsAndHashCode.Include
 	@Id

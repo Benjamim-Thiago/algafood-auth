@@ -1,0 +1,10 @@
+package br.com.btsoftware.algafood.auth;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+public class GeneratePass {
+
+	public static void main(String[] args) {
+		System.out.println(new BCryptPasswordEncoder().encode("123567@#7"));
+	}
+}
