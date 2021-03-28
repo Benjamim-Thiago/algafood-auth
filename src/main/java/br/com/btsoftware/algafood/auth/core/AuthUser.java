@@ -1,8 +1,9 @@
 package br.com.btsoftware.algafood.auth.core;
 
 
-import java.util.Collections;
+import java.util.Collection;
 
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 
 import br.com.btsoftware.algafood.auth.domain.UserCredentials;
@@ -15,8 +16,8 @@ public class AuthUser extends User{
 	private Long userId;
 	private String fullName;
 	
-	public AuthUser(UserCredentials user) {
-		super(user.getEmail(), user.getPassword(), Collections.emptyList());
+	public AuthUser(UserCredentials user, Collection<? extends GrantedAuthority> authorities) {
+		super(user.getEmail(), user.getPassword(), authorities);
 		
 		this.userId = user.getId();		
 		this.fullName = user.getName();

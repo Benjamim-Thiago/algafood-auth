@@ -18,8 +18,8 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "users")
-public class UserCredentials {
+@Table(name = "groups")
+public class Group {
 
 	@EqualsAndHashCode.Include
 	@Id
@@ -28,13 +28,10 @@ public class UserCredentials {
 
 	private String name;
 
-	private String email;
-
-	private String password;
-	
 	@ManyToMany
-	@JoinTable(name = "user_group", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
-	private Set<Group> groups = new HashSet<>();
-
+    @JoinTable(name = "group_permission", joinColumns = @JoinColumn(name = "group_id"),
+            inverseJoinColumns = @JoinColumn(name = "permission_id"))
+	private Set<Permission> permissions = new HashSet<>();
 	
+
 }
